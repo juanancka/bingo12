@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="index.js" defer></script>
+</head>
+<body onload="init()">
+    <div id="bingo-content">
+        <table id="bingo-card">
+            <tr>
+                <th>B</th>
+                <th>I</th>
+                <th>N</th>
+                <th>G</th>
+                <th>O</th>
+            </tr>
+            <!-- Generate Bingo squares dynamically -->
+            <tbody id="card-body"></tbody>
+        </table>
+    </div>
+    <div id="controls">
+        <button onclick="generateNewCard()">Generar Nuevo Cartón</button>
+        <button onclick="callNumber()">Llamar Número</button>
+        <button onclick="checkBingo()">Comprobar Bingo</button>
+        <p>Última llamada: <span id="currentCall">Ninguno</span></p>
+        <p>Números llamados: <span id="calledNumbers">Ninguno</span></p>
+    </div>
+</body>
+</html>

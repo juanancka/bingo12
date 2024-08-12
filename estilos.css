@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#bingo-card {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+    max-width: 600px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4b400;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+.marked {
+    background-color: #4caf50;
+    color: white;
+}
+
+#controls {
+    margin-top: 20px;
+}
